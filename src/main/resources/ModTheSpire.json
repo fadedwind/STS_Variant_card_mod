@@ -1,0 +1,10 @@
+{
+  "modid": "tutoiral",
+  "name": "卡牌变异mod",
+  "author_list": ["FL"],
+  "description": "卡牌现在推出多种变异版本，来攀登高塔吧",
+  "version": "0.0.1",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.23.2",
+  "dependencies": ["basemod"]
+}
