@@ -12,7 +12,7 @@ import basemod.abstracts.CustomCard;
 
 public class Corruption_1 extends CustomCard {
     public static final String ID = "ExampleMod:Corruption?";
-    private static final String NAME = "腐化?";
+    private static final String NAME = "腐化！";
     private static final String IMG_PATH ="ExampleModResources/img/cards/Corruption_1.png";
     private static final String DESCRIPTION = "你的技能牌被消耗时会进入弃牌堆。你的技能牌在打出时被消耗。";
     private static final CardType TYPE = CardType.POWER;
