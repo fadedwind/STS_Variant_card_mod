@@ -4,14 +4,12 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.CorruptionPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
@@ -19,11 +17,12 @@ import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 
 import basemod.abstracts.CustomCard;
 
+import examplemod.powers.Corruption_1_Power;
 
 public class Corruption_2 extends CustomCard {
     public static final String ID = "ExampleMod:Corruption?";
     private static final String NAME = "腐化？";
-    private static final String IMG_PATH ="ExampleModResources/img/cards/Corruption_1.png";
+    private static final String IMG_PATH ="ExampleModResources/img/cards/red/power/Corruption_2.png";
     private static final String DESCRIPTION = "你的技能牌费用变为0";
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColor.RED;
@@ -59,7 +58,7 @@ public class Corruption_2 extends CustomCard {
             }
         }
         if (!powerExists) {
-            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new CorruptionPower((AbstractCreature)p)));
+            addToBot((AbstractGameAction)new ApplyPowerAction((AbstractCreature)p, (AbstractCreature)p, (AbstractPower)new Corruption_1_Power((AbstractCreature)p)));
         }
     }
 

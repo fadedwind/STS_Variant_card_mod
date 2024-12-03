@@ -5,6 +5,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import basemod.BaseMod;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import examplemod.cards.Strike;
+import examplemod.cards.red.Corruption_1;
 
 
 @SpireInitializer // 加载mod的注解
@@ -25,5 +26,6 @@ EditCardsSubscriber{
     public void receiveEditCards() {
         // TODO 这里写添加你卡牌的代码
         BaseMod.addCard(new Strike());
+        BaseMod.addCard(new Corruption_1());
     }
 }
