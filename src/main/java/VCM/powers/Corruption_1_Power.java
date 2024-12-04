@@ -1,4 +1,4 @@
-package examplemod.powers;
+package VCM.powers;
 
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 public class Corruption_1_Power extends AbstractPower {
     public static final String POWER_ID = "Corruption_1";
 
-    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings("Corruption");
+    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
 
     public static final String NAME = powerStrings.NAME;
 
@@ -20,9 +20,14 @@ public class Corruption_1_Power extends AbstractPower {
         this.name = NAME;
         this.ID = "Corruption_1";
         this.owner = owner;
-        this.amount = -1;
         this.description = DESCRIPTIONS[0];
+        this.amount = -1;
+
+        // 添加一大一小两张能力图
+        String path128 = "ExampleModResources/img/powers/Corruption_1_84.png";
+        String path48 = "ExampleModResources/img/powers/Corruption_1_32.png";
         loadRegion("corruption_1");
+
     }
 
     public void updateDescription() {

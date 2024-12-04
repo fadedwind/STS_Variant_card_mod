@@ -1,4 +1,4 @@
-package examplemod.cards.red;
+package VCM.cards.red;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -18,10 +18,10 @@ import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 
 import basemod.abstracts.CustomCard;
 
-import examplemod.powers.Corruption_1_Power;
+import VCM.powers.Corruption_1_Power;
 
-public class Corruption_1 extends CustomCard {
-    public static final String ID = "ExampleMod:Corruption?";
+public class Corruption_3 extends CustomCard {
+    public static final String ID = "VCM:Corruption?";
     private static final String NAME = "腐化？";
     private static final String IMG_PATH ="ExampleModResources/img/cards/red/power/corruption_1.png";
     private static final String DESCRIPTION = "你的技能牌费用变为0";
@@ -30,7 +30,7 @@ public class Corruption_1 extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public Corruption_1() {
+    public Corruption_3() {
         // 为了命名规范修改了变量名。这些参数具体的作用见下方
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 4;
@@ -52,7 +52,7 @@ public class Corruption_1 extends CustomCard {
 
         boolean powerExists = false;
         for (AbstractPower pow : p.powers) {
-            if (pow.ID.equals("Corruption_1")) {
+            if (pow.ID.equals("Corruption_3")) {
                 powerExists = true;
 
                 break;
@@ -72,7 +72,7 @@ public class Corruption_1 extends CustomCard {
     }
 
     public AbstractCard makeCopy() {
-        return new Corruption_1();
+        return new Corruption_3();
     }
 
 }

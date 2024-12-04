@@ -1,4 +1,4 @@
-package examplemod.cards;
+package VCM.cards.colorless;
 
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -10,9 +10,9 @@ import basemod.abstracts.CustomCard;
 
 
 public class Strike extends CustomCard {
-    public static final String ID = "ExampleMod:Strike";
+    public static final String ID = "VCM:Strike?";
     private static final String NAME = "打击";
-    private static final String IMG_PATH ="ExampleModResources/img/cards/Strike.png";
+    private static final String IMG_PATH ="ExampleModResources/img/cards/colorless/Strike.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final CardType TYPE = CardType.ATTACK;

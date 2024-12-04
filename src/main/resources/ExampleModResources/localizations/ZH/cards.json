@@ -1,0 +1,7 @@
+{
+    "VCM:Corruption?": { 
+      "NAME": "腐化？", 
+      "DESCRIPTION": "你的技能牌耗能变为0", 
+      "UPGRADE_DESCRIPTION": ""
+    }
+}

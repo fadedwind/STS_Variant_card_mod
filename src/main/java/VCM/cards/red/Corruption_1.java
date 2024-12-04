@@ -1,4 +1,4 @@
-package examplemod.cards.red;
+package VCM.cards.red;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
@@ -17,19 +18,19 @@ import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 
 import basemod.abstracts.CustomCard;
 
-import examplemod.powers.Corruption_1_Power;
+import VCM.powers.Corruption_1_Power;
 
-public class Corruption_2 extends CustomCard {
-    public static final String ID = "ExampleMod:Corruption?";
+public class Corruption_1 extends CustomCard {
+    public static final String ID = "VCM:Corruption?";
     private static final String NAME = "腐化？";
-    private static final String IMG_PATH ="ExampleModResources/img/cards/red/power/Corruption_2.png";
-    private static final String DESCRIPTION = "你的技能牌费用变为0";
+    private static final String IMG_PATH ="ExampleModResources/img/cards/red/power/corruption_1.png";
+    private static final String DESCRIPTION = "你的技能牌费用变为0。";
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColor.RED;
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public Corruption_2() {
+    public Corruption_1() {
         // 为了命名规范修改了变量名。这些参数具体的作用见下方
         super(ID, NAME, IMG_PATH, 4, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 4;
@@ -51,9 +52,8 @@ public class Corruption_2 extends CustomCard {
 
         boolean powerExists = false;
         for (AbstractPower pow : p.powers) {
-            if (pow.ID.equals("Corruption")) {
+            if (pow.ID.equals("Corruption_1")) {
                 powerExists = true;
-
                 break;
             }
         }
@@ -71,8 +71,7 @@ public class Corruption_2 extends CustomCard {
     }
 
     public AbstractCard makeCopy() {
-        return new Corruption_2();
+        return new Corruption_1();
     }
 
 }
-
