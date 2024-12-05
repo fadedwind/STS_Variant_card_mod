@@ -1,5 +1,4 @@
 package VCM.cards.red;
-
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -14,7 +13,6 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.BorderLongFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
-
 
 import basemod.abstracts.CustomCard;
 
@@ -54,7 +52,6 @@ public class Corruption_3 extends CustomCard {
         for (AbstractPower pow : p.powers) {
             if (pow.ID.equals("Corruption_3")) {
                 powerExists = true;
-
                 break;
             }
         }

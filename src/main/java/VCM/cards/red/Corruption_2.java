@@ -19,10 +19,10 @@ import basemod.abstracts.CustomCard;
 import VCM.powers.Corruption_1_Power;
 
 public class Corruption_2 extends CustomCard {
-    public static final String ID = "ExampleMod:Corruption?";
+    public static final String ID = "ExampleMod:Corruption!";
     private static final String NAME = "腐化!";
     private static final String IMG_PATH ="ExampleModResources/img/cards/red/power/Corruption_2.png";
-    private static final String DESCRIPTION = "你的牌被消耗时，会触发消耗的效果但不会消耗。";
+    private static final String DESCRIPTION = "你的攻击牌和技能牌费用变为0，且打出被消耗。每回合永久失去1点最大生命。";
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = CardColor.RED;
     private static final CardRarity RARITY = CardRarity.RARE;
